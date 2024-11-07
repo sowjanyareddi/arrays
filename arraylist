@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class Arraylist {
+    public static void main(String[] args){
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+
+        System.out.println("Initial ArrayList: " + numbers);
+
+        System.out.println( "index value"  + numbers.get(0));
+        //System.out.println(numbers.set(1, 44));
+        System.out.println(numbers.getFirst());
+        System.out.println(numbers.getLast());
+        System.out.println("elements in array " + numbers.contains(4));
+        System.out.println("index of numbers is " + numbers.indexOf(40));
+        System.out.println("size of list " + numbers.size());
+        System.out.println(numbers.remove(4));
+        numbers.forEach(list -> System.out.println(list));
+        numbers.clear();
+        System.out.println("after the clearing elements " + numbers);
+      
+}
+}
