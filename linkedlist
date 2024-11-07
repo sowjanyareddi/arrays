@@ -1,0 +1,27 @@
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+        // Create a LinkedList of integers
+        LinkedList<Integer> numbers = new LinkedList<>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+
+        System.out.println("Initial LinkedList: " + numbers);
+
+        System.out.println("index number " + numbers.get(2));
+        System.out.println("first element of the list " +numbers.getFirst());
+        System.out.println("last element of list " + numbers.getLast());
+        System.out.println(numbers.size());
+        System.out.println("number equal " + numbers.equals(30));
+        System.out.println(numbers.remove(0));
+        System.out.println("after removing element " + numbers);
+        numbers.clear();
+        System.out.println(numbers);
+
+        
+    }
+}
