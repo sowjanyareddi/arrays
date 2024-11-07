@@ -1,0 +1,21 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class set {
+    public static void main(String[] args) {
+        // Creating a HashSet
+        Set<String> list = new HashSet<>();
+
+        list.add("cat");
+        list.add("dog");
+        list.add("hen");
+        list.add("cock");
+        list.add("bird");
+
+        System.out.println("Set: " + list);
+        System.out.println(list.equals(0));
+        System.out.println(list.size());
+        list.clear();
+        System.out.println(list);
+    }
+}
