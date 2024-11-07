@@ -1,0 +1,27 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class map {
+    public static void main(String[] args) {
+        // Creating a HashMap using the Map interface
+        Map<String, Integer> map = new HashMap<>();
+
+        map.put("cat", 3);
+        map.put("dog", 5);
+        map.put("bird", 2);
+        map.put("hen" ,4);
+        map.put("cock",6);
+        System.out.println("Initial Map: " + map);
+
+        System.out.println(map.size());
+        System.out.println("adding value" +  map.put("bird", 10));
+        System.out.println(map.remove("cock"));
+        System.out.println(map);
+        boolean hasCountFive = map.containsValue(5);
+        System.out.println("Contains value 5: " + hasCountFive);
+        map.clear();
+        System.out.println("list after clearing " + map);
+    
+
+        }
+    }
